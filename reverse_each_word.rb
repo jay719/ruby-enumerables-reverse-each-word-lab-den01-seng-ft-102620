@@ -2,9 +2,10 @@ require 'pry'
 
 def reverse_each_word (string)
  
-words = string.split(" ") 
+words = string.split(" ").each
 	new_sentence = []
 	words.collect do |word|
+	  word.reverse
 		end_loop = word.length
 		new_string = ''
 		while end_loop > 0
